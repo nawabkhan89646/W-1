@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("header-1.jpg");
+    height: 100vh;
+    background-position: center 38%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(10, 30, 39,0.8), rgba(255, 255, 255,0), #0A1E27);
+    color: aliceblue;
+}
+
+.navbar{
+    display: flex;
+    padding: 2rem 4rem;
+    align-items: center;
+    color: aliceblue;
+    position: relative;
+}
+
+.navbar .middle{
+    list-style: none;
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.navbar .right{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 4rem;
+    align-items: center;
+    padding: 5.5rem 0;
+    color: aliceblue;
+}
+
+.first .left h1{
+    font-size: 4rem;
+}
+
+.first .left{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.first .right{
+    display: flex;
+    gap: 1rem;
+    transform: translateX(calc(-50% + 1rem)) rotate(90deg);
+    position: absolute;
+    left: 0;
+}
+
+.second{
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 10rem;
+    gap: 8rem;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(10, 30, 39,0), #0A1E27 30%); 
+    color: aliceblue;    
+}
+
+.second .left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.second .left h1{
+    font-size: 3rem;
+}
+
+.second .left p{
+    line-height: 1.5rem;
+}
+
+.second > *{
+    width: 50%;
+}
+
+.second img{
+    width: 100%;
+}
+
+.third{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+    background-color: #0A1E27;
+    color: aliceblue;
+}
+
+.third .left{
+    width: 27%;
+}
+
+.third .middle{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.third .right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.last{
+    text-align: center;
+    padding: 3rem;
+    background-color: #0A1E27;
+    color: aliceblue;
+}
